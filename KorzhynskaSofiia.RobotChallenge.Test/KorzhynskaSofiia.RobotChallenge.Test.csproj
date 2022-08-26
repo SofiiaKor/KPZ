@@ -54,7 +54,8 @@
   <ItemGroup>
     <Compile Include="TestDistanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="TestIsCellFree.cs" />
+    <Compile Include="TestAlgorithm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
