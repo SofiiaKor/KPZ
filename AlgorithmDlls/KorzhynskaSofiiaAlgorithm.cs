@@ -29,26 +29,27 @@ namespace KorzhynskaSofiia.RobotChallange
 				return new CreateNewRobotCommand();
 			}
 
-			var stationPosition = FindNearestFreeStation(movingRobot, map, robots);
 			var robotPosition = movingRobot.Position;
 			var station = map.GetNearbyResources(robotPosition, 30)[0];
 			var i = 1;
 
 			while (!IsStationFree(station, movingRobot, robots))
 			{
-				station = map.GetNearbyResources(robotPosition, 50)[i];
+				station = map.GetNearbyResources(robotPosition, 30)[i];
 				i++;
 			}
 
-			if (stationPosition == null)
+			if (station == null)
 				return null;
-			if (Math.Abs(stationPosition.X - robotPosition.X) <= 1 && Math.Abs(stationPosition.Y - robotPosition.Y) <= 1)
+
+			if ((Math.Abs(station.Position.X - robotPosition.X) <= 1 &&
+				Math.Abs(station.Position.Y - robotPosition.Y) <= 1) && station.Energy > 10)
 				return new CollectEnergyCommand();
 
 			var directionX = Math.Sign(station.Position.X - robotPosition.X);
 			var directionY = Math.Sign(station.Position.Y - robotPosition.Y);
 
-			return RoundCount < 30
+			return RoundCount < 20 || movingRobot.Energy < 20
 				? new MoveCommand() { NewPosition = new Position() { X = robotPosition.X + directionX, Y = robotPosition.Y + directionY } }
 				: new MoveCommand() { NewPosition = new Position() { X = robotPosition.X + directionX + RoundCount / 10, Y = robotPosition.Y + directionY + RoundCount / 10 } };
 		}
