@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Robot.Common;
 
@@ -8,22 +9,48 @@ namespace KorzhynskaSofiia.RobotChallange
 	{
 		public string Author => "Korzhynska Sofiia";
 
+		public int RoundCount { get; set; }
+
+		public KorzhynskaSofiiaAlgorithm()
+		{
+			Logger.OnLogRound += Logger_OnLogRound;
+		}
+
+		private void Logger_OnLogRound(object sender, LogRoundEventArgs e)
+		{
+			RoundCount++;
+		}
+
 		public RobotCommand DoStep(IList<Robot.Common.Robot> robots, int robotToMoveIndex, Map map)
 		{
 			var movingRobot = robots[robotToMoveIndex];
-			if (movingRobot.Energy > 500 && robots.Count < map.Stations.Count)
+			if (movingRobot.Energy > 1000 && robots.Count < map.Stations.Count && RoundCount < 40)
 			{
 				return new CreateNewRobotCommand();
 			}
 
-			var stationPosition = FindNearestFreeStation(robots[robotToMoveIndex], map, robots);
+			var stationPosition = FindNearestFreeStation(movingRobot, map, robots);
+			var robotPosition = movingRobot.Position;
+			var station = map.GetNearbyResources(robotPosition, 30)[0];
+			var i = 1;
+
+			while (!IsStationFree(station, movingRobot, robots))
+			{
+				station = map.GetNearbyResources(robotPosition, 50)[i];
+				i++;
+			}
 
 			if (stationPosition == null)
 				return null;
-			if (stationPosition == movingRobot.Position)
+			if (Math.Abs(stationPosition.X - robotPosition.X) <= 1 && Math.Abs(stationPosition.Y - robotPosition.Y) <= 1)
 				return new CollectEnergyCommand();
 
-			return new MoveCommand() { NewPosition = stationPosition };
+			var directionX = Math.Sign(station.Position.X - robotPosition.X);
+			var directionY = Math.Sign(station.Position.Y - robotPosition.Y);
+
+			return RoundCount < 30
+				? new MoveCommand() { NewPosition = new Position() { X = robotPosition.X + directionX, Y = robotPosition.Y + directionY } }
+				: new MoveCommand() { NewPosition = new Position() { X = robotPosition.X + directionX + RoundCount / 10, Y = robotPosition.Y + directionY + RoundCount / 10 } };
 		}
 
 		public Position FindNearestFreeStation(Robot.Common.Robot movingRobot, Map map,

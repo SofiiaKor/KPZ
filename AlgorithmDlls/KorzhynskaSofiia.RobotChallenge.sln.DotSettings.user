@@ -1,9 +1,15 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=37ce7d73_002Dbd55_002D45b1_002D95a3_002Dba357caaae2a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestDistance" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestDistanceHelper.TestDistance&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestAlgorithm.TestMoveCommand&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestIsCellFree.TestCell&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestAlgorithm.TestCollectCommand&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestDistanceHelper.TestDistance&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestAlgorithm.TestMoveCommand&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestIsCellFree.TestCell&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestAlgorithm.TestCollectCommand&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestAlgorithm.TestCreateRobotCommand&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestAlgorithm.TestCreateRobotCommand2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;MSTest::BC1FF478-C710-48E8-8DF6-9E11F49ADF01::.NETFramework,Version=v4.7.2::KorzhynskaSofiia.RobotChallenge.Test.TestIsCellFree.TestCell2&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;BC1FF478-C710-48E8-8DF6-9E11F49ADF01/f:TestAlgorithm.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

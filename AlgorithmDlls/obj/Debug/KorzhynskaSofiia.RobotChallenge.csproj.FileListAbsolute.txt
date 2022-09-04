@@ -13,4 +13,11 @@ D:\Studies\University\3 курс\I семестр\КПЗ\Lab1\AlgorithmDlls\obj\
 D:\Studies\University\3 курс\I семестр\КПЗ\Lab1\AlgorithmDlls\obj\Debug\KorzhynskaSofiia.RobotChallenge.csproj.CopyComplete
 D:\Studies\University\3 курс\I семестр\КПЗ\Lab1\AlgorithmDlls\obj\Debug\KorzhynskaSofiia.RobotChallange.dll
 D:\Studies\University\3 курс\I семестр\КПЗ\Lab1\AlgorithmDlls\obj\Debug\KorzhynskaSofiia.RobotChallange.pdb
-D:\Studies\University\3 курс\I семестр\КПЗ\Lab1\AlgorithmDlls\obj\Debug\KorzhynskaSofiia.RobotChallenge.csproj.AssemblyReference.cache
+D:\Studies\University\3 курс\I семестр\КПЗ\Lab1-4\AlgorithmDlls\bin\Debug\KorzhynskaSofiia.RobotChallange.dll
+D:\Studies\University\3 курс\I семестр\КПЗ\Lab1-4\AlgorithmDlls\bin\Debug\KorzhynskaSofiia.RobotChallange.pdb
+D:\Studies\University\3 курс\I семестр\КПЗ\Lab1-4\AlgorithmDlls\bin\Debug\Robot.Common.dll
+D:\Studies\University\3 курс\I семестр\КПЗ\Lab1-4\AlgorithmDlls\obj\Debug\KorzhynskaSofiia.RobotChallenge.csproj.CoreCompileInputs.cache
+D:\Studies\University\3 курс\I семестр\КПЗ\Lab1-4\AlgorithmDlls\obj\Debug\KorzhynskaSofiia.RobotChallenge.csproj.CopyComplete
+D:\Studies\University\3 курс\I семестр\КПЗ\Lab1-4\AlgorithmDlls\obj\Debug\KorzhynskaSofiia.RobotChallange.dll
+D:\Studies\University\3 курс\I семестр\КПЗ\Lab1-4\AlgorithmDlls\obj\Debug\KorzhynskaSofiia.RobotChallange.pdb
+D:\Studies\University\3 курс\I семестр\КПЗ\Lab1-4\AlgorithmDlls\obj\Debug\KorzhynskaSofiia.RobotChallenge.csproj.AssemblyReference.cache
